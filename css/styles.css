@@ -92,7 +92,6 @@ nav ul li a {
 }
 
 .button-container {
-    width: fit-content;
     margin: 15px;
 }
 
@@ -120,10 +119,16 @@ footer {
     justify-content: center;
     margin-bottom: 20px;
     margin-right: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
   
   .footer-nav li {
     margin-right: 10px;
+    flex: 0 0 100%;
+    margin-bottom: 10px;
   }
   
   .footer-nav li:last-child {
@@ -169,6 +174,10 @@ footer {
     
       footer .col-md-6 {
         margin-bottom: 20px;
+      }
+      .footer-nav li {
+        flex: 0 0 auto;
+        margin: 0 10px;
       }
 
 }
