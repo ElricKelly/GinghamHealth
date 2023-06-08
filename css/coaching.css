@@ -1,0 +1,11 @@
+.accordion-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.accordion-item{
+    width: 70%;
+    background-color: #F5F5F5;
+}
