@@ -1,0 +1,8 @@
+.form-container {
+    max-width: 50%; /* Adjust the desired width */
+    margin: 0 auto;
+  }
+
+  .form-control-long{
+    width: 100%;
+  }
