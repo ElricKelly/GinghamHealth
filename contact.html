@@ -28,11 +28,21 @@
             <input type="email" class="form-control" id="email" name="email" required>
           </div>
           <div class="mb-3">
+            <label for="subject" class="form-label">Subject:</label>
+            <select name="subject">
+              <option value="one-on-one">One-on-One Coaching Program</option>
+              <option value="group">Group Coaching Program</option>
+              <option value="hike">Hike and Learn</option>
+              <option value="consultation">Consultation</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="mb-3">
             <label for="message" class="form-label">Message:</label>
             <textarea class="form-control form-control-long" id="message" name="message" required></textarea>
           </div>
-          <button type="submit" class="btn btn-primary">Send</button>
-          <input type="hidden" name="_next" value="http://127.0.0.1:5500/thank-you.html">
+          <button type="submit" class="btn btn-primary" style="background-color: #12664F; border-color: #12664F">Send</button>
+          <input type="hidden" name="_next" value="https://elrickelly.github.io/GinghamHealth/thank-you.html">
         </form>
       </div>
     </section>

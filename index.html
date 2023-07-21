@@ -20,50 +20,56 @@
     <h1>Start Your Path to Wellness!</h1>
 
     <div class="card-container">
-        <div class="card" style="width: 18rem;">
-            <img src="images/athlete.jpg" class="card-img-top card-image" alt="...">
+        <div class="card">
+            <img src="images/lily-in-water.png" class="card-img-top card-image" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <h5 class="card-title">One-on-One Coaching Program</h5>
+              <p class="card-text">Are you a burned out professional?  
+                Are you tired of going full speed and not really getting anywhere? 
+                 Are you tired of eating protein bars and snacks instead of real food? 
+                  I was once where you are, but I changed my trajectory.</p>
+              <a href="coaching.html" class="btn btn-primary" style="background-color: #12664F; border-color: #12664F">More info</a>
             </div>
           </div>
-          <div class="card" style="width: 18rem;">
-            <img src="images/diet.jpg" class="card-img-top card-image" alt="...">
+          <div class="card">
+            <img src="images/sunset.png" class="card-img-top card-image" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <h5 class="card-title">Group Coaching Program</h5>
+              <p class="card-text">Do you thrive in a group setting?  
+                Do you want to surround yourself with a community of people who share the same goal of being healthier?  
+                Are you open to learning new things and discussing your challenges and triumphs?</p>
+              <a href="coaching.html" class="btn btn-primary" style="background-color: #12664F; border-color: #12664F">More info</a>
             </div>
           </div>
-          <div class="card" style="width: 18rem;">
+          <div class="card">
             <img src="images/hiking.jpg" class="card-img-top card-image" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <h5 class="card-title">Hike and Learn</h5>
+              <p class="card-text">Who’s up for a hike?
+                <br> <br> <br> <br> <br> <br>
+              </p>
+              <a href="coaching.html" class="btn btn-primary" style="background-color: #12664F; border-color: #12664F">More info</a>
             </div>
           </div>
     </div>
 
     <div class="text-container">
-    <p class="announcement-text">
+    <p class="announcement-text-colored-background">
         Have you had a recent health scare?<br>
         Are you having difficulty trying to figure out how to follow your doctor's recommendations?<br>
         I am here to listen and to <b>HELP!</b><br>
         This is a safe place to ask questions and share your health concerns.
     </p>
-    <p>
+    <p class="announcement-text">
         My name is <strong>Michelle King</strong> and I am an <strong>Integrative Nutrition Health Coach.</strong><br>
         I can help you address your health concerns in a safe and confidential space. <br>
         I specialize in helping people address 
         <strong>Weight Loss, Diabetes, Fatigue, Gut Health, Stress</strong> and much more!<br>
-        As a member of the <strong>LGBTQ+ community</strong>, I am here to help members of our community live their best life!!<br>
         <b>We all deserve to be happy, healthy, and safe!!</b><br>
         If you are <b>freaked out about what your doctor has told you recently</b> and want a quick chat to ease your stress level, I am here for you!<br>
         You can have a quick <b>20 minute chat with me for just 25.00!!!</b> <br>
         We will address your immediate concern and come up with some easy solutions that you can quickly implement!<br>
-        If you need further coaching, you can <a href=""><b>sign up for one of my other coaching programs.</b></a>
+        If you need further coaching, you can <a href="coaching.html"><b>sign up for one of my other coaching programs.</b></a>
     </p>
 </div>
 
@@ -110,10 +116,54 @@
     </div>
   </section>
 
+  <!-- <form id="subscription-form">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <button type="submit">Subscribe</button>
+  </form> -->
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- <script>
+  $(document).ready(function() {
+    $('#subscription-form').submit(function(e) {
+      e.preventDefault();
+
+      var email = $('#email').val();
+
+      // Make AJAX request to Mailchimp API
+      $.ajax({
+        type: 'POST',
+        url: 'https://us21.api.mailchimp.com/3.0/lists/79f05ee60b/members',
+        dataType: 'json',
+        data: {
+          email_address: email,
+          status: 'subscribed'
+        },
+        headers: {
+          'Authorization': '01653150203a5162c6f7e2064aa3de4f-us21'
+        },
+        success: function(response) {
+          // Handle success, show thank you message, etc.
+          console.log('Successfully subscribed:', response);
+          // Reset the form
+          $('#subscription-form')[0].reset();
+          alert('Thank you for subscribing!');
+        },
+        error: function(xhr, status, error) {
+          // Handle error, display error message, etc.
+          console.error('Subscription failed:', error);
+          alert('Subscription failed. Please try again later.');
+        }
+      });
+    });
+  });
+</script> -->
+
   <div id="footerContainer"></div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="scripts/script.js"></script>
+    <script src="scripts/email.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
     
 </body>
