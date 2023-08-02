@@ -23,3 +23,8 @@
   .accordion-item.active .accordion-content {
     display: block;
   }
+
+  .accordion-image{
+    max-height: 300px;
+    max-width: 300px;
+  }
