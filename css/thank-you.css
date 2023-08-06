@@ -16,16 +16,17 @@
   .button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #4caf50;
+    background-color: #12BFC7; 
+    border-color: #12BFC7;
     color: #ffffff;
     text-decoration: none;
     border-radius: 4px;
   }
   
   .button:hover {
-    background-color: #45a049;
+    background-color: #12BFC7;
   }
   
   .button:active {
-    background-color: #3e8e41;
+    background-color: #12BFC7;
   }
