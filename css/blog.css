@@ -17,6 +17,7 @@
   .accordion-content {
     display: none;
     padding: 10px;
+    width: 40%;
   }
   
   .accordion-item.active .accordion-content {
